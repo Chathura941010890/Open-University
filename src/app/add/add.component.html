@@ -1,0 +1,47 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Employee Entry Form</div>
+    <div class="panel-body">
+    <form class="form-horizontal" (submit)="addEmployee()">
+      <div class="form-group">
+        <label for="id" class="col-sm-2 control-label">Id : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="model.id" name="Id">
+        </div>
+      </div>
+    <div class="form-group">
+      <label for="emp_name" class="col-sm-2 control-label">Name : </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" [(ngModel)]="model.name" name="name" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="position" class="col-sm-2 control-label">Salary : </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" [(ngModel)]="model.salary" name="salary">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="department" class="col-sm-2 control-label">Age : </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" [(ngModel)]="model.age" name="age">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="salary" class="col-sm-2 control-label">Image : </label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" [(ngModel)]="model.image" name="image">
+      </div>
+    </div>
+    
+  
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-8">
+        <button type="submit" class="btn btn-success">Save</button>
+         <a class="btn btn-info" (click)="goBack()">Cancel</a>
+      </div>
+     
+    </div>
+  </form>
+  
+    </div>
+  </div>
